@@ -1,0 +1,174 @@
+html {
+  font-size: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'montserrat', sans-serif;
+  background-color: rgb(244,244,244);
+  color: #333
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 40px;
+}
+
+.title {
+  font-size: 4.4rem;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  font-size: 1.6rem;
+  padding: 0.5rem 2rem;
+  line-height: 2.8rem;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+}
+
+.button {
+  background-color: rgba(0,0,0,0.75);
+  color: white;
+  font-size: 1.4rem;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  border: 1px solid rgba(0,0,0,0.75);
+  transition: background-color 250ms;
+}
+
+.button:hover {
+  background-color: rgba(0,0,0,0.85);
+}
+
+@media(min-width:768px) {
+  .form {
+    flex-direction: row;
+    align-items: baseline;
+  }
+  .input {
+    flex-grow: 6;
+    margin-right: 20px;
+  }
+  .button {
+    flex-grow: 1;
+  }
+}
+
+.card-list {
+  margin-top: 4rem;
+}
+
+.card {
+  padding: 2rem 4rem;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.25);
+  margin-bottom: 2rem;
+  background-color: white;
+}
+
+.card--title {
+  margin-bottom: 0.5rem;
+  font-size: 3.2rem;
+}
+
+.card--image {
+  margin: 0 auto;
+  display: block;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(244,244,244);
+  overflow-y: scroll;
+}
+
+.popup .content {
+  display: block;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 25px;
+  color: #333;
+}
+
+.popup .content h2 {
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+
+.popup .content h2 span {
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.popup .content .rating {
+  margin-bottom: 30px;
+}
+
+.popup .content .plot {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px 30px;
+}
+
+.popup .content .plot img {
+  flex: 1 1 50%;
+  max-width: 300px;
+  padding: 0 15px;
+}
+
+.popup .content .plot p {
+  flex: 1 1 20%;
+  padding: 15px;
+}
+
+.popup .content .plot .desc {
+  flex: 1 1 33%;
+  flex-wrap: wrap;
+}
+
+.popup .content .close {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  background: tomato;
+  color: #333;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+  transition: 0.4s ease-out;
+}
+
+.popup .content .close:hover {
+  background: #fc2904;
+}
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pagination .page-item {
+  margin: 4px 2px;
+}
